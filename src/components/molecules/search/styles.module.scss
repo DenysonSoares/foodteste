@@ -1,0 +1,11 @@
+.searchBar {
+  &::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("/assets/icons/search.svg") no-repeat;
+    position: absolute;
+    top: 7px;
+    left: 25px;
+  }
+}
