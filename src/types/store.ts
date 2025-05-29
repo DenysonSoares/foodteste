@@ -1,8 +1,8 @@
 export interface Product {
   name: string;
-  store: string;
   description: string;
   price: number;
+  store?: string;
 }
 
 export interface Store {
