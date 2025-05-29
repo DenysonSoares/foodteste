@@ -1,6 +1,6 @@
 # 🛒 Projeto de aiqfome desenvolvido com React e Next.js
 
-Este é um projeto simples de carrinho de compras desenvolvido utilizando **React** e **Next.js**. A aplicação foca em performance, boa experiência do usuário e uma estrutura limpa e escalável.
+Este é um projeto simples de um aplicativo de delivery desenvolvido utilizando **React** e **Next.js**. A aplicação foca em performance, boa experiência do usuário e uma estrutura limpa e escalável.
 
 ## 🚀 Tecnologias Utilizadas
 
