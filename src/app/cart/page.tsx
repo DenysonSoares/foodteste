@@ -15,6 +15,7 @@ import { formatReal, slugify } from "@/lib/utils";
 
 const Cart = () => {
   const { cart, total, handleQuantityChange } = useCart();
+  console.log("🚀 ~ Cart ~ cart:", cart);
 
   const groupedByStore = cart.reduce(
     (acc: Record<string, any[]>, item: any) => {
@@ -109,6 +110,16 @@ const Cart = () => {
                               </p>
                             </div>
                           )}
+                          {item.options?.drinks?.length > 0 && (
+                            <div>
+                              <p className="text-sm text-gray-600">
+                                • complementos:
+                              </p>
+                              <p className="text-sm text-gray-600">
+                                {item.options.drinks.join(", ")}
+                              </p>
+                            </div>
+                          )}
                           {item.options?.cutlery?.wants && (
                             <p className="text-sm text-gray-600">
                               Talheres: Sim
@@ -178,7 +189,7 @@ const Cart = () => {
               </span>
             </div>
             <div className="w-60">
-              <Link href="/checkout">
+              <Link href="/thanks">
                 <button className="h-[48px] w-full rounded-md bg-[#7B1FA2] font-bold text-white">
                   ir para o pagamento
                 </button>
